@@ -41,7 +41,7 @@ class NiumaEndedView extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final iconC = iconColor ?? theme.colorScheme.onSurface;
-    final bg = iconBackgroundColor ?? Colors.black.withValues(alpha: 0.5);
+    final bg = iconBackgroundColor ?? Colors.black.withOpacity( 0.5);
     final disabled = onReplay == null;
 
     return Center(
@@ -59,7 +59,7 @@ class NiumaEndedView extends StatelessWidget {
                 height: size,
                 child: Icon(
                   Icons.replay,
-                  color: disabled ? iconC.withValues(alpha: 0.4) : iconC,
+                  color: disabled ? iconC.withOpacity( 0.4) : iconC,
                   size: size * 0.55,
                 ),
               ),

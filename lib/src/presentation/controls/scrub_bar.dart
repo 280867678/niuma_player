@@ -200,8 +200,8 @@ class _ScrubBarState extends State<ScrubBar> {
                         bufferedProgress: bufferedProgress,
                         activeColor: accent,
                         bufferedColor: theme.bufferedFillColor ??
-                            theme.iconColor.withValues(alpha: 0.4),
-                        trackColor: theme.iconColor.withValues(alpha: 0.25),
+                            theme.iconColor.withOpacity( 0.4),
+                        trackColor: theme.iconColor.withOpacity( 0.25),
                         trackHeight: theme.scrubBarHeight,
                       ),
                     ),

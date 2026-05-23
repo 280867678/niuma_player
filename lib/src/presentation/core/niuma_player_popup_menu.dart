@@ -131,7 +131,7 @@ class _NiumaPopupMenu<T> extends StatelessWidget {
             explicitChildNodes: true,
             label: semanticLabel,
             child: SingleChildScrollView(
-              padding: popupTheme.menuPadding ??
+              padding: popupTheme.padding  ??
                   const EdgeInsets.symmetric(vertical: 8),
               child: ListBody(children: items),
             ),

@@ -173,12 +173,12 @@ class _DeviceTile extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
         decoration: BoxDecoration(
           color: isConnected
-              ? accent.withValues(alpha: 0.12)
+              ? accent.withOpacity( 0.12)
               : const Color(0x0DFFFFFF),
           borderRadius: BorderRadius.circular(8),
           border: isConnected
               ? Border.all(
-                  color: accent.withValues(alpha: 0.5),
+                  color: accent.withOpacity( 0.5),
                   width: 0.5,
                 )
               : null,

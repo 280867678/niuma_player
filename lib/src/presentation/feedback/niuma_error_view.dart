@@ -81,7 +81,7 @@ class NiumaErrorView extends StatelessWidget {
             Text(
               error!.message,
               style: TextStyle(
-                color: textC.withValues(alpha: 0.7),
+                color: textC.withOpacity( 0.7),
                 fontSize: 12,
               ),
               textAlign: TextAlign.center,

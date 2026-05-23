@@ -93,9 +93,10 @@ class NiumaDanmakuPainter extends CustomPainter {
 
     for (final it in candidates) {
       final fontSize = it.fontSize * fontScale;
-      final color = it.color.withValues(
-        alpha: it.color.a * settings.opacity,
-      );
+// 替换 withValues 为 Flutter 官方原生方法，逻辑完全一致
+final color = it.color.withAlpha(
+  (it.color.alpha * settings.opacity).round(),
+);
       final tp = _measure(it.text, fontSize, color);
 
       switch (it.mode) {

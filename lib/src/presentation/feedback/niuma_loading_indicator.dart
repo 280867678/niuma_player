@@ -160,7 +160,7 @@ class _NiumaLoadingPainter extends CustomPainter {
     final eyeOpacity =
         1.0 - 0.7 * math.sin(pulse * math.pi).abs(); // 0.3..1.0
     final eye = Paint()
-      ..color = _ink.withValues(alpha: eyeOpacity)
+      ..color = _ink.withOpacity( eyeOpacity)
       ..strokeWidth = 2.5
       ..strokeCap = StrokeCap.round;
     // 左眼 ×
@@ -201,7 +201,7 @@ class _NiumaLoadingPainter extends CustomPainter {
       canvas.drawCircle(
         Offset(-12.0 + i * 12.0, 0),
         3,
-        Paint()..color = _orange.withValues(alpha: opacity),
+        Paint()..color = _orange.withOpacity( opacity),
       );
     }
 

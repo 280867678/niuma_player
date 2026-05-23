@@ -274,10 +274,15 @@ class VideoPlayerBackend extends PlayerBackend {
     required int aspectDen,
     bool unsafeAutoBackground = false,
   }) async {
+    // 官方公开稳定API：判断播放器是否初始化
+if (!_inner.value.isInitialized) {
+  return false;
+}
+    
     // ignore: invalid_use_of_visible_for_testing_member
-    final tid = _inner.playerId;
+    //final tid = _inner.playerId;
     // kUninitializedPlayerId == -1；未初始化时不能 PiP
-    if (tid < 0) return false;
+    //if (tid < 0) return false;
     try {
       final result = await _pipChannel.invokeMethod<bool>(
         'enterPictureInPicture',

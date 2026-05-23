@@ -36,7 +36,7 @@ dependencies:
   shared_preferences: ^2.2.0
   # 2.10.0 加入 VideoPlayerController.playerId getter，iOS PiP 桥需要它把
   # Flutter texture id 映射到原生 AVPlayer 实例（见 video_player_backend.dart）
-  video_player: ">=2.10.0 <3.0.0"
+  video_player: ^2.7.0
   plugin_platform_interface: ^2.0.2
   flutter_web_plugins:
     sdk: flutter

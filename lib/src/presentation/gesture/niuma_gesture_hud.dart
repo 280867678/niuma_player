@@ -58,7 +58,7 @@ class _ProgressBar extends StatelessWidget {
         child: LinearProgressIndicator(
           minHeight: 3,
           value: value.clamp(0.0, 1.0),
-          backgroundColor: Colors.white.withValues(alpha: 0.18),
+          backgroundColor: Colors.white.withOpacity( 0.18),
           valueColor: AlwaysStoppedAnimation(color),
         ),
       ),
@@ -104,10 +104,10 @@ class _SeekCard extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 14),
         decoration: BoxDecoration(
-          color: Colors.black.withValues(alpha: 0.7),
+          color: Colors.black.withOpacity( 0.7),
           borderRadius: BorderRadius.circular(16),
           border: Border.all(
-            color: Colors.white.withValues(alpha: 0.06),
+            color: Colors.white.withOpacity( 0.06),
             width: 0.5,
           ),
         ),
@@ -157,7 +157,7 @@ class _SeekCard extends StatelessWidget {
               Text(
                 '/ $total',
                 style: TextStyle(
-                  color: Colors.white.withValues(alpha: 0.55),
+                  color: Colors.white.withOpacity( 0.55),
                   fontSize: 12,
                   fontWeight: FontWeight.w500,
                   fontFeatures: const [FontFeature.tabularFigures()],
@@ -269,10 +269,10 @@ class _IconFlash extends StatelessWidget {
           width: 84,
           height: 84,
           decoration: BoxDecoration(
-            color: Colors.black.withValues(alpha: 0.55),
+            color: Colors.black.withOpacity( 0.55),
             shape: BoxShape.circle,
             border: Border.all(
-              color: Colors.white.withValues(alpha: 0.1),
+              color: Colors.white.withOpacity( 0.1),
               width: 0.5,
             ),
           ),

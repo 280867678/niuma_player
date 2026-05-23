@@ -35,18 +35,18 @@ class NiumaShortVideoTheme {
         progressIdleHeight: 1.5,
         progressActiveHeight: 3.5,
         progressPlayedColor: const Color(0xFFEF9F27),
-        progressTrackColor: const Color(0xFFFFFFFF).withValues(alpha: 0.18),
-        progressBufferedColor: const Color(0xFFFFFFFF).withValues(alpha: 0.3),
+        progressTrackColor: const Color(0xFFFFFFFF).withOpacity( 0.18),
+        progressBufferedColor: const Color(0xFFFFFFFF).withOpacity( 0.3),
         progressThumbColor: const Color(0xFFEF9F27),
         progressThumbRadius: 6.0,
         pauseIndicatorBackgroundColor:
-            const Color(0xFF000000).withValues(alpha: 0.5),
+            const Color(0xFF000000).withOpacity( 0.5),
         pauseIndicatorIconColor: const Color(0xFFEF9F27),
         pauseIndicatorSize: 56,
         pauseIndicatorIconSize: 56,
         scrubLabelTextColor: const Color(0xFFFFFFFF),
         scrubLabelBackgroundColor:
-            const Color(0xFF000000).withValues(alpha: 0.55),
+            const Color(0xFF000000).withOpacity( 0.55),
       );
 
   /// 进度条 idle 状态的高度（默认 1.5）。
